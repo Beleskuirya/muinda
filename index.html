@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muinda</title>
+    <link rel="icon" href="Veille 2211.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script src="Regions.js"></script>
+    <style>    
+         @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+    </style>
+    <style>
+        @layer utilities {
+            .text-outline-white {
+                text-shadow: 
+                    -1px -1px 0 #ffffff, 
+                    1px -1px 0 #ffffff, 
+                    -1px 1px 0 #ffffff, 
+                    1px 1px 0 #ffffff;
+            }
+            .font-bagel{
+                font-family: 'Bagel Fat One', cursive;
+            }
+
+            /* General menu styling */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Dropdown menu */
+            li.relative {
+                position: relative;
+            }
+
+            ul.absolute {
+                position: absolute;
+                min-width: 200px; /* Adjust as needed */
+                z-index: 10;
+            }
+
+            .group:hover > ul {
+                display: block;
+            }
+
+            /* Dropdown menu items */
+            ul.absolute li a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                padding: 8px 12px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            ul.absolute li a:hover {
+                background-color: #f0f0f0; /* Adjust to match your hover color */
+            }
+
+            /* Rounded corners for dropdown menu */
+            ul.absolute li:first-child a {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            ul.absolute li:last-child a {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A7C59',
+                        secondary: '#A1C181',
+                        
+                        dark: '#333',
+                        light: '#f8f8f8',
+                        green : '#4A7C59',
+                        julia : '#AEB877',
+                        white :'#f8fafc',
+                        whitestwhite: '#ffffff',
+                        navabar: '#043927',
+                        articleBg: '#E8B364',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif',],
+                        serif: ['Playfair Display', 'serif','Georgia'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script>
+        // Function to toggle mobile menu
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Function to toggle submenus
+        function toggleSubMenu(subMenuId) {
+            const subMenu = document.getElementById(subMenuId);
+            subMenu.classList.toggle('hidden');
+        }
+
+        // Event listener for the hamburger button
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        });
+    </script>
+</head>
+<body class="font-sans text-dark bg-whitestwhite">
+    <header class="bg-cover bg-center bg-whitestwhite p-4" style="background-image: url('C:\Users\beles\Documents\SWE\Muinda\Site Web\Rectangle 2.png');">
+        <nav class="flex items-center gap-8 ml-8">
+            <!-- Logo and Site Title -->
+            <a href="index.html" class="flex items-center">
+                <img src="Veille 2211.png" alt="Logo" class="h-12"> <!-- The logo -->
+                <h6 class="text-black text-xl font-serif">Muinda</h6>
+              
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden sm:flex gap-8 ml-8">
+                <!-- First Menu Item -->
+                <li><a href="Display%20Articles.html" class="text-lg font-bold text-black hover:text-articleBg">Actualités</a></li>
+
+                <!-- Dropdown Menu -->
+                <li class="relative group">
+                    <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                        Régions
+                        <span class="ml-1">▼</span> <!-- Dropdown caret -->
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Afrique du Nord</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Ouest</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique Australe</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Est</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Afrique Centrale</a></li>
+                    </ul>
+                </li>
+
+                <!-- Third Menu Item -->
+                <li class="relative group">
+                    <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                        Thèmes
+                        <span class="ml-1">▼</span> <!-- Dropdown caret -->
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Santé</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Sécurité</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Conflits</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Economie</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Politique</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Technologie</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Environnement</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Relations Internationales</a></li>
+                    </ul>
+                </li>
+
+                <!-- Social Media Icons -->
+                <div class="hidden md:flex gap-4 ml-auto">
+                    <a href="https://www.linkedin.com/company/muinda/" class="text-gray-500 hover:text-primary">
+                        <img src="linkedin-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.instagram.com/muinda.media/" class="text-gray-500 hover:text-primary">
+                        <img src="instagram-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                </div>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="ml-auto sm:hidden">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-4">
+            <nav class="flex flex-col space-y-4">
+                <ul class="flex flex-col gap-4">
+                    <li><a href="Display Articles.html" class="text-lg font-bold text-black hover:text-articleBg">Actualités</a></li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                            Régions
+                            <span class="ml-1">▼</span>
+                        </a>
+                        <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Afrique du Nord</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Ouest</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique Australe</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Est</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Afrique Centrale</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                            Thèmes
+                            <span class="ml-1">▼</span>
+                        </a>
+                        <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Santé</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Sécurité</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Conflits</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Economie</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Politique</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Technologie</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Environnement</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Relations Internationales</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- Social Media Icons -->
+                <div class="flex gap-4 mt-4">
+                    <a href="https://www.linkedin.com/company/muinda/" class="text-gray-500 hover:text-primary">
+                        <img src="linkedin-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.instagram.com/muinda.media/" class="text-gray-500 hover:text-primary">
+                        <img src="instagram-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="bg-articleBg w-full m-0 flex-grow flex items-center cursor-pointer" onclick="document.getElementById('searchInput').focus()">
+        <img src="Artboard_15-512-149075757.png" class="h-6 w-6 ml-4" alt="Search icon">
+        <input id="searchInput" type="text" placeholder="Rechercher un rapport, une publication, un expert..." class="w-full h-full p-4 text-white bg-articleBg placeholder-white" onkeydown="handleSearch(event)">
+    </div>
+
+    <script>
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                
+                // Map keywords to pages by checking if query contains the keyword
+                const routes = [
+                    { keyword: 'afrique', url: 'article-syrie-sahel.html' },
+                    { keyword: 'russie', url: 'article-syrie-sahel.html' },
+                    { keyword: 'syrie', url: 'article-syrie-sahel.html' },
+                    { keyword: 'actualités', url: 'Display%20Articles.html' },
+                    { keyword: 'relations internationales', url: 'article-syrie-sahel.html' },
+                    // Add more keyword/url pairs as needed
+                ];
+                
+                // Look for a matching keyword
+                for (let route of routes) {
+                    if (query.includes(route.keyword)) {
+                        window.location.href = route.url;
+                        return;
+                    }
+                }
+                
+                // Optional: Alert if no match is found
+                alert("Aucun résultat trouvé pour : " + query);
+            }
+        }
+    </script>
+
+    <!-- Hero Section -->
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Classes for sequential fade-in */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+        .delay-0 { animation-delay: 0s; }
+        .delay-1 { animation-delay: 0.5s; }
+        .delay-2 { animation-delay: 1s; }
+        .delay-3 { animation-delay: 1.5s; }
+    </style>
+      <div class="relative">
+        <!-- Image appears first -->
+        <img src="18djenne_cap-superJumbo-3017444656-copie.jpg" alt="Africa landscape" class="bg-whitestwhite shadow-md w-full fade-in delay-0">
+        <!-- Container appears second -->
+        <div class="absolute inset-y-0 left-0 flex items-center p-4 md:p-8 w-full md:w-[45%] fade-in delay-1">
+                <!-- Outer box appears third -->
+                <div class="border-4 border-gray-300 p-2 md:p-4 rounded-lg bg-opacity-60 bg-gray-700 fade-in delay-2">
+                        <!-- Inner box appears fourth -->
+                        <div class="border-4 border-white p-4 rounded-lg bg-opacity-70 fade-in delay-3">
+                                <p class="font-serif georgia text-white text-2xl md:text-4xl lg:text-5xl leading-snug">
+                                     Comprendre l'Afrique au prisme de ses réalités.
+                                </p>
+                        </div>
+                </div>
+        </div>
+</div>
+
+    <!-- Categories -->
+    <br>
+
+    <!-- Articles -->
+    
+    <section class="bg-whitestwhite text-center fade-in delay-0">
+        
+        <div class="flex justify-center mt-4">
+            <h2 class="text-2xl font-bold leading-tight">
+                <a href="article-syrie-sahel.html" 
+                   class="bg-white text-articleBg py-2 px-4 sm:px-6 rounded-lg border-2 border-articleBg hover:bg-articleBg hover:text-white transition duration-300 transform hover:scale-[1.2] fade-in delay-0">
+                    Nos dernières publications
+                </a>
+            </h2>
+        </div>
+        <br>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-72 fade-in delay-1">
+                <img src="sipa_ap22392080_000012.avif" alt="Article 1" class="w-full h-auto rounded-lg">
+                <p class="mt-4 text-dark">Les nouvelles routes de l'influence militaire russe</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-72 fade-in delay-2">
+                <img src="11-03-2025.png" alt="Article 3" class="w-full h-auto rounded-lg">
+                <p class="mt-4 text-dark" style="text-align: center;">Veille du 11 Mars 2025</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-72 fade-in delay-3">
+                <img src="7-03-2025.png" alt="Article 2" class="w-full h-auto rounded-lg">
+                <p class="mt-4 text-dark">Veille du 7 Mars 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-whitestwhite text-center py-8">
+        <div class="flex justify-center mt-4">
+            <h2 class="text-2xl font-bold leading-tight">
+                Qui sommes-nous ?
+            </h2>
+        </div>
+        <br>
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-lg text-dark leading-relaxed">
+                Muinda est une plateforme dédiée à la compréhension des réalités de l'Afrique. Notre mission est d'offrir des perspectives multiculturelles et éclairées sur les enjeux actuels, en mettant en avant des analyses approfondies et des experts aguerris. Nous croyons en l'importance du dialogue et de la pluralité d'opinions pour façonner un avenir meilleur.
+            </p>
+            <div class="mt-6">
+                <img src="your-image-path.jpg" alt="Présentation de Muinda" class="mx-auto rounded-lg shadow-lg w-full md:w-1/2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-articleBg text-center py-8 border-t-4 border-dark bg-cover">
+        <div class="social-media">
+            <p class="font-bold text-white">© Muinda</p>
+        </div>
+       
+    </footer>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Les nouvelles routes de l'influence militaire russe après la fin de l'ère Assad</title>
+    <link rel="icon" href="Veille 2211.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <style>    
+        @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+   </style>
+    <style>
+        @layer utilities {
+            .text-outline-white {
+                text-shadow: 
+                    -1px -1px 0 #ffffff, 
+                    1px -1px 0 #ffffff, 
+                    -1px 1px 0 #ffffff, 
+                    1px 1px 0 #ffffff;
+            }
+            .font-bagel{
+                font-family: 'Bagel Fat One', cursive;
+            }
+
+            /* General menu styling */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Dropdown menu */
+            li.relative {
+                position: relative;
+            }
+
+            ul.absolute {
+                position: absolute;
+                min-width: 200px; /* Adjust as needed */
+                z-index: 10;
+            }
+
+            .group:hover > ul {
+                display: block;
+            }
+
+            /* Dropdown menu items */
+            ul.absolute li a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                padding: 8px 12px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            ul.absolute li a:hover {
+                background-color: #f0f0f0; /* Adjust to match your hover color */
+            }
+
+            /* Rounded corners for dropdown menu */
+            ul.absolute li:first-child a {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            ul.absolute li:last-child a {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A7C59',
+                        secondary: '#A1C181',
+                        
+                        dark: '#333',
+                        light: '#f8f8f8',
+                        green : '#4A7C59',
+                        julia : '#AEB877',
+                        white :'#f8fafc',
+                        whitestwhite: '#ffffff',
+                        navabar: '#043927',
+                        articleBg: '#E8B364',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif',],
+                        serif: ['Playfair Display', 'serif','Georgia'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script>
+        // Function to toggle mobile menu
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Function to toggle submenus
+        function toggleSubMenu(subMenuId) {
+            const subMenu = document.getElementById(subMenuId);
+            subMenu.classList.toggle('hidden');
+        }
+
+        // Event listener for the hamburger button
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        });
+    </script>
+</head>
+<body class="font-sans text-dark bg-whitestwhite">
+    <header class="bg-cover bg-center bg-whitestwhite p-4" style="background-image: url('C:\Users\beles\Documents\SWE\Muinda\Site Web\Rectangle 2.png');">
+        <nav class="flex items-center gap-8 ml-8">
+            <!-- Logo and Site Title -->
+            <a href="index.html" class="flex items-center">
+                <img src="Veille 2211.png" alt="Logo" class="h-12"> <!-- The logo -->
+                <h6 class="text-black text-xl font-serif">Muinda</h6>
+              
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden sm:flex gap-8 ml-8">
+                <!-- First Menu Item -->
+                <li><a href="Display%20Articles.html" class="text-lg font-bold text-black hover:text-articleBg">Actualités</a></li>
+
+                <!-- Dropdown Menu -->
+                <li class="relative group">
+                    <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                        Régions
+                        <span class="ml-1">▼</span> <!-- Dropdown caret -->
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Afrique du Nord</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Ouest</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique Australe</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Est</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Afrique Centrale</a></li>
+                    </ul>
+                </li>
+
+                <!-- Third Menu Item -->
+                <li class="relative group">
+                    <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                        Thèmes
+                        <span class="ml-1">▼</span> <!-- Dropdown caret -->
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Santé</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Sécurité</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Conflits</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Economie</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Politique</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Technologie</a></li>
+                        <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Environnement</a></li>
+                        <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Relations Internationales</a></li>
+                    </ul>
+                </li>
+
+                <!-- Social Media Icons -->
+                <div class="hidden md:flex gap-4 ml-auto">
+                    <a href="https://www.linkedin.com/company/muinda/" class="text-gray-500 hover:text-primary">
+                        <img src="linkedin-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.instagram.com/muinda.media/" class="text-gray-500 hover:text-primary">
+                        <img src="instagram-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                </div>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="ml-auto sm:hidden">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-4">
+            <nav class="flex flex-col space-y-4">
+                <ul class="flex flex-col gap-4">
+                    <li><a href="Display Articles.html" class="text-lg font-bold text-black hover:text-articleBg">Actualités</a></li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                            Régions
+                            <span class="ml-1">▼</span>
+                        </a>
+                        <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Afrique du Nord</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Ouest</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique Australe</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Afrique de l'Est</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Afrique Centrale</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg font-bold text-black hover:text-articleBg flex items-center">
+                            Thèmes
+                            <span class="ml-1">▼</span>
+                        </a>
+                        <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg">
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Santé</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg">Sécurité</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Conflits</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Economie</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-t-lg">Politique</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Technologie</a></li>
+                            <li><a href="index.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Environnement</a></li>
+                            <li><a href="article-syrie-sahel.html" class="block px-4 py-2 text-black hover:bg-articleBg rounded-b-lg">Relations Internationales</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- Social Media Icons -->
+                <div class="flex gap-4 mt-4">
+                    <a href="https://www.linkedin.com/company/muinda/" class="text-gray-500 hover:text-primary">
+                        <img src="linkedin-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.instagram.com/muinda.media/" class="text-gray-500 hover:text-primary">
+                        <img src="instagram-svgrepo-com.svg" class="w-6 h-6">
+                    </a>
+                </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="bg-articleBg w-full m-0 flex-grow flex items-center cursor-pointer" onclick="document.getElementById('searchInput').focus()">
+        <img src="Artboard_15-512-149075757.png" class="h-6 w-6 ml-4" alt="Search icon">
+        <input id="searchInput" type="text" placeholder="Rechercher un rapport, une publication, un expert..." class="w-full h-full p-4 text-white bg-articleBg placeholder-white" onkeydown="handleSearch(event)">
+    </div>
+    <script>
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                
+                // Map keywords to pages by checking if query contains the keyword
+                const routes = [
+                    { keyword: 'afrique', url: 'article-syrie-sahel.html' },
+                    { keyword: 'russie', url: 'article-syrie-sahel.html' },
+                    { keyword: 'syrie', url: 'article-syrie-sahel.html' },
+                    { keyword: 'actualités', url: 'Display%20Articles.html' },
+                    { keyword: 'relations internationales', url: 'article-syrie-sahel.html' }
+                    // Add more keyword/url pairs as needed
+                ];
+                
+                // Look for a matching keyword
+                for (let route of routes) {
+                    if (query.includes(route.keyword)) {
+                        window.location.href = route.url;
+                        return;
+                    }
+                }
+                
+                // Optional: Alert if no match is found
+                alert("Aucun résultat trouvé pour : " + query);
+            }
+        }
+    </script>
+
+    
+    <section class="text-center p-12 bg-light">
+        <div class="logo flex justify-center items-center w-full">
+            <img src="Veille 2211.png" class="mx-auto">
+        </div>
+
+     <!-- Nouvelle section d'article -->
+  <section class="text-center p-12 bg-light">
+    <div class="max-w-4xl mx-auto text-left">
+      <h2 class="text-3xl font-bold mb-4">
+        Les nouvelles routes de l'influence militaire russe après la fin de l'ère Assad
+      </h2>
+
+      <p class="mb-4">
+        La chute du régime syrien d’Assad a forcé la Russie à repenser sa stratégie militaire en réorientant ses efforts vers l’Afrique. Ce redéploiement vise à préserver son ancrage géopolitique et à consolider ses alliances sur le continent face aux incertitudes internationales. Toutefois, une question demeure : s’agit-il d’un projet mûrement réfléchi et inscrit dans une vision stratégique à long terme, ou d’un ajustement opportuniste dicté par les circonstances ?
+      </p>
+      <p class="text-sm text-gray-600 mb-2">
+        13/03/2025 | Temps de lecture : 8 minutes | Régions : Afrique du Nord, de l’Ouest, de l’Est | Thèmes : Relations Internationales, Sécurité, Conflits
+      </p>
+    <figure class="mb-4 mx-auto text-center max-w-4xl w-full">
+        <img class="mx-auto w-full h-1/8" src="sipa_ap22392080_000012.avif" alt="Forum économique Russie-Afrique à Sotchi, 2019">
+        <figcaption class="text-xs text-gray-500 mt-1">
+            Forum économique Russie-Afrique à Sotchi, 2019. Kremlin Press Office / Handout/Anadolu Agency via Getty Images
+        </figcaption>
+    </figure>
+    
+    <p class="mb-4 border-l-4 border-green pl-4">
+        Depuis plusieurs décennies, la Russie s’est imposée comme un acteur incontournable du jeu géopolitique au Moyen-Orient et en Afrique. Désormais privée de ses bases militaires de Tartous et Khmeimim et de son accès stratégique à la mer Méditerranée après la chute du régime syrien, Moscou se retrouve dépourvue de points d’appui logistiques essentiels pour la projection de ses forces en Afrique.
+      </p>
+      <figure class="mb-4 mx-auto text-center max-w-4xl w-full">
+        <img class="mx-auto w-full h-1/8" src="Syria.webp" alt="Forum économique Russie-Afrique à Sotchi, 2019">
+        <figcaption class="text-xs text-gray-500 mt-1">
+            Russia military bases in Syria
+        </figcaption>
+    </figure>
+   
+      <p class="mb-4">
+        Dans cette dynamique, le Groupe Wagner a joué un rôle central, opérant dans plusieurs zones de conflit africaines, de la République Centrafricaine au Mali, en passant par le Soudan et le Mozambique. Après la rébellion avortée d’Evgueni Prigojine en juin 2023 et sa mort en août 2023, le Kremlin a entrepris une restructuration en créant l'Africa Corps pour reprendre le contrôle des opérations sur le continent.
+      </p>
+
+
+      <p class="mb-4">
+        Cependant, le groupe a connu un bouleversement majeur à la suite de la rébellion avortée d’Evgueni Prigojine – chef du groupe Wagner – en juin 2023, suivi de la mort de ce dernier en août 2023. En désaccord avec le ministère russe de la Défense et le chef d’état-major sur la gestion du conflit russo-ukrainien, Prigojine a lancé une mutinerie contre le commandement militaire avant de se retirer sous la pression du Kremlin. Deux mois plus tard, il trouve la mort dans un crash d’avion aux circonstances troubles, alimentant les spéculations sur une élimination orchestrée par Moscou. 
+    </p>
+      <br>
+
+      
+      <p class="mb-4">
+        Par conséquent, le Kremlin a entrepris une profonde restructuration des opérations de Wagner en Afrique, visant à reprendre le contrôle direct des activités de la force paramilitaire. Cette réorganisation a conduit à la création de l'Africa Corps, une entité placée sous l'autorité du ministère russe de la Défense. Cette transition marque un changement de paradigme, avec une volonté de Moscou de formaliser et d’intégrer plus étroitement son influence militaire sur le continent dans sa politique étrangère. 
+        </p>
+      <br>
+
+      <p class="mb-4">
+        La transition vers Africa Corps reste toutefois partielle et incertaine, notamment au Mali et en Centrafrique, où Wagner conserve une présence forte et la confiance des dirigeants locaux. À Bamako, les autorités hésitent encore à laisser Africa Corps prendre le relais, tandis que les mercenaires de Wagner résistent à leur intégration dans la nouvelle structure, compromettant la pérennité des contrats en cours. En République Centrafricaine, la situation est tout aussi floue. Wagner maintient ses opérations et demeure un pilier du régime de Faustin-Archange Touadéra, qui lui accorde une confiance intacte. 
+            </p>
+      <br>
+    <p class="mb-4 border-l-4 border-green pl-4 transition-colors duration-300 hover:border-articleBg">
+        Ainsi, une question s’impose : la fin du régime Assad pourrait-elle fragiliser le déploiement militaire russe en Afrique et remettre en cause son influence diplomatique sur le continent ? De prime abord, le lien entre ces deux théâtres d’opérations peut sembler ténu. Pourtant, la Russie utilisait ses bases syriennes comme base logistique pour son engagement en Afrique subsaharienne, assurant la continuité de ses flux logistiques et militaires vers les États partenaires. 
+         </p>
+      <br>
+
+      <h3 class="text-3xl font-bold mb-4">
+       Un repositionnement stratégique en Afrique
+      </h3>
+      <br>
+
+    <p class="mb-4">
+
+        <p>
+            Au travers des accords bilatéraux, Moscou a su s’imposer comme un partenaire militaire privilégié de régimes en quête de soutien face à des défis sécuritaires récurrents. Officiellement engagée dans la lutte contre le terrorisme et la formation des forces locales, la Russie y trouve surtout un levier stratégique pour contrer l’influence des puissances occidentales.
+        </p>
+        <br>
+        <p>
+            Dans un contexte où les redéploiements militaires russes sont contraints par la fin de l’ère Assad, Moscou pourrait chercher à compenser cette perte en renforçant davantage son engagement en Afrique. L’objectif serait de réaffirmer son statut de puissance militaire capable d’intervenir et de garantir la stabilité de régimes alliés.
+        </p>
+        <br>
+        <p>
+            Mais cette volonté de repositionnement ne va pas sans interrogations. La chute du régime syrien pourrait semer le doute parmi les alliés africains de la Russie. Si Moscou n’a pas su empêcher la chute d’un allié aussi stratégique qu’Assad, pourrait-elle être un garant fiable pour des régimes en quête de soutien face aux insurrections et aux ambitions indépendantistes ? Des pays comme ceux de l’Alliance des Etats du Sahel (AES) – Mali, Burkina Faso, Niger – qui ont misé sur un partenariat quasiment exclusif avec la Russie, pourraient être tentés de diversifier leurs alliances ou d’explorer d’autres options sécuritaires tel que <a href="https://adf-magazine.com/fr/2024/12/la-turquie-introduit-des-mercenaires-dans-le-melange-violent-du-sahel/" class="text-primary hover:underline">Sadat, société militaire privée turque</a>, présente depuis 2024 dans les trois pays.
+        </p>
+        <br>
+        <p class="mb-4 border-l-4 border-green pl-4 transition-colors duration-300 hover:border-articleBg">
+            Néanmoins, cette perspective mérite d’être nuancée. Bien que les régimes militaires de l’AES soient confrontés à des menaces djihadistes et séparatistes, celles-ci ne présentent pas, à ce stade, le même degré de structuration et de puissance que l’opposition armée syrienne, qui s’est consolidée durant des années avant de parvenir à fragiliser le régime de Bachar Al-Assad.
+        </p>
+        <br>
+        <p>
+            Ainsi, le redéploiement militaire russe en Afrique ne répond pas uniquement à des impératifs opérationnels, mais constitue aussi un enjeu de crédibilité auprès de ses partenaires africains, dont la stabilité reste fragile face à des menaces susceptibles de compromettre la survie même de leurs régimes à terme. Entre restructuration des routes logistiques, renforcement des alliances locales et maintien d’une image d’acteur incontournable, Moscou se doit de prouver que son engagement en Afrique ne vacille pas – à moins qu’il ne soit, en réalité, qu’un ajustement conjoncturel et compensatoire.
+        </p>
+
+    <br>
+    <figure class="mb-4">
+        <img class="mx-auto w-auto h-1/16" src="Vladimir-Poutine-et-Bachar-al-Assad--4239124341.webp" alt="Photo diffusée par l'agence d'Etat russe Sputnik, 25 juillet 2024">
+        
+    </figure>
+    <br>
+
+      <h3 class="text-3xl font-bold mb-4">
+        Entre tensions et ouverture, le futur incertain de Tartous et Khmeimim
+
+       </h3>
+       <p class="mb-4">
+        Avec la chute du régime de Bachar Al-Assad, les bases russes de Tartous et Khmeimim, autrefois piliers logistiques de la stratégie militaire de Moscou au Moyen-Orient et en Afrique, se retrouvent dans une zone d'incertitude. Le nouveau pouvoir en place, incarné par le mouvement Hayat Tahrir al-Cham (HTC), semble adopter une posture ambivalente, oscillant entre ouverture diplomatique et méfiance héritée d’années de  <a href="https://umhd.org.tr/en//upload/Dokuman/opt-idlib_eng-7ASC3IS876II3DTFG8TT.pdf" class="text-primary hover:underline">bombardements russes sur la poche d’Idleb.</a>
+             </p>
+      <br>
+
+      <p class="mb-4">
+        HTC, dans sa quête de légitimité internationale, a amorcé quelques jours après sa prise de pouvoir une politique d'ouverture en prenant  <a href="https://icibeyrouth.com/articles/1303941/le-chef-militaire-de-htc-annonce-la-dissolution-des-groupes-armes" class="text-primary hover:underline">plusieurs mesures symboliques</a>, se caractérisant par dissolution officielle de sa branche armée, ou encore des prises de contact actives avec des puissances internationales telles que l'Union européenne, les États-Unis et le Royaume-Uni.
+                 </p>
+      <br>
+
+      <p class="mb-4">
+        À propos de Moscou, le porte-parole du mouvement, Obeida Arnaout, a <a href="https://fr.euronews.com/2024/12/17/la-presence-de-troupes-russes-en-syrie-na-aucune-raison-detre-selon-le-gouvernement-de-tra" class="text-primary hover:underline">déclaré </a>: "Leurs intérêts étaient liés au régime criminel d'Assad. [La Russie] peut reconsidérer sa position et prendre l'initiative de tendre la main à la nouvelle administration pour montrer qu'elle n'a pas d'animosité envers le peuple syrien et que l'ère du régime Assad est enfin terminée."
+    </p>
+      <br>
+
+      <p class="mb-4">
+        Cette politique d'ouverture laisse entrevoir la possibilité d'un compromis entre Moscou et Damas. Toutefois, cette hypothèse reste fragile, comme en témoigne <a href="https://www.twz.com/news-features/russian-military-convoy-blocked-from-entering-port-of-tartus-in-syria" class="text-primary hover:underline">l'incident survenu le 11 février 2025 </a>, lorsqu'un convoi militaire russe a été bloqué à l'entrée de la base de Tartous, révélant les tensions latentes et la prudence du nouveau pouvoir syrien.   
+     </p>
+      <br>
+
+      <p class="mb-4 border-l-4 border-green pl-4 transition-colors duration-300 hover:border-articleBg">
+        Face à ces incertitudes, la Russie adopte une stratégie de diversification. Elle combine le maintien d'un dialogue prudent avec HTC et redéploiement militaire vers d'autres zones stratégiques. Plusieurs responsables russes ont confirmé que des échanges sont en cours avec les nouveaux dirigeants syriens afin de préserver une présence minimale et d’éviter une rupture totale de son influence au Levant.
+         </p>
+      <br>
+       <h3 class="text-3xl font-bold mb-4">
+        Une diplomatie d'ajustement : cap vers la Libye
+
+       </h3>
+       <p class="mb-4">
+        En parallèle, Moscou mise sur un renforcement de ses positions en Afrique via un axe stratégique passant par la Libye. 
+ 
+       </p>
+       <br>
+
+       <p class="mb-4 border-l-4 border-green pl-4 transition-colors duration-300 hover:border-articleBg">
+Ce repositionnement s’appuie sur un passif historique important entre la Russie et le maréchal Khalifa Haftar, chef de l’Armée nationale libyenne (ANL) et homme fort de l’Est libyen. 
+         </p>
+      <br>
+      <p class="mb-4">
+        Depuis la chute de Mouammar Kadhafi en 2011, la Libye est plongée dans une instabilité politique et militaire chronique, avec une fragmentation du pays en deux administrations rivales et une multitude de milices contrôlant différentes régions. À l’ouest, la capitale, Tripoli abrite le Gouvernement d’Unité Nationale (GUN), reconnu par l’ONU. À l’est, Benghazi et Tobrouk sont le fief de l’Armée nationale libyenne (ANL) du maréchal Khalifa Haftar.
+    </p>
+              <br>
+              <p class="mb-4">
+                À partir de 2018, Wagner a progressivement étendu sa présence en Libye, apportant soutien militaire et expertise aux forces de Haftar, notamment lors de son offensive ratée sur Tripoli en 2019-2020. Ce déploiement répondait aux objectifs de Moscou de limiter l’accès occidental aux ressources pétrolières libyennes tout en renforçant son ancrage en Méditerranée. 
+            </p>
+                      <br>
+                      <p class="mb-4">
+                        Malgré l’échec de la prise de Tripoli, Wagner a consolidé sa présence dans l’Est et le Sud libyen. Après le retrait des forces de Haftar vers la Cyrénaïque, le groupe paramilitaire s’est replié sur les bases aériennes de Juffrah et Al-Khadim, où il a maintenu un contrôle opérationnel important.
+                                        </p>
+                              <br>
+       <figure class="mb-4">
+        <img class="mx-auto w-full h-1/8" src="_131091668_libya_control_13_09_23_640map-nc.png.webp" alt="Libya areas of control, septembre 2023">
+        <figcaption class="text-xs text-gray-500 mt-1">
+          Libya areas of control, septembre 2023
+        </figcaption>
+      </figure>
+    
+       <p class="mb-4">
+        Ainsi, l'Est libyen, contrôlé par l'Armée Nationale Libyenne (ANL) du maréchal Khalifa Haftar, se profile comme un pivot militaire. Au cours de la seconde partie du mois de décembre, <a href="https://libyaobserver.ly/news/russia-launches-air-bridge-libya" class="text-primary hover:underline">la base d’Al Khadim</a> a vu arriver des équipements avancés acheminés depuis la Syrie, ainsi qu’une intensification des rotations aériennes. 
+
+
+         
+       </p>
+       <br>
+
+       <h3 class="text-3xl font-bold mb-4">
+        La Libye, plaque tournante des ambitions africaines russes 
+
+       </h3>
+       <p class="mb-4">
+        Ce repositionnement stratégique inscrit la Libye dans un rôle central. Située aux portes du Sahel, la région offre à Moscou un point de départ privilégié pour projeter ses forces vers d'autres théâtres africains tels que le Niger, le Mali, le Soudan ou <a href="https://fr.apanews.net/diplomacy/tchad-lambassadeur-de-russie-au-tchad-recu-par-le-ministre-des-affaires-etrangeres/" class="text-primary hover:underline"> potentiellement le Tchad.</a> Le choix d'Al-Khadim et la rénovation en cours de <a href="https://www.agenzianova.com/fr/news/Libye-Sources-Nova-Russia-rouvre-une-base-%C3%A0-la-fronti%C3%A8re-avec-le-Tchad-et-le-Soudan/"class="text-primary hover:underline">l'aérodrome de Maaten Al-Sarra</a>, situé à proximité des frontières tchadienne et soudanaise, confirment cette ambition.
+        </p>
+        <p class="mb-4">Cependant, des doutes subsistent quant à la capacité des infrastructures libyennes à remplacer efficacement les bases syriennes. Les coûts élevés, les capacités logistiques limitées et l'instabilité chronique en Libye sont autant de défis qui pourraient freiner l'élan russe. </p>
+        <br>
+        
+         
+      
+       
+       <figure class="mb-4">
+        <img class="mx-auto w-full h-1/8" src="https://img.lemde.fr/2025/02/12/0/0/1920/1080/556/0/75/0/32fdf96_sirius-fs-upload-1-20v6hdcdxgtv-1739348777115-maaten-al-sarra.png" alt="La base aérienne de Maaten Al-Sarra, en Libye, le 10 février 2025">
+        <figcaption class="text-xs text-gray-500 mt-1">
+          La base aérienne de Maaten Al-Sarra, en Libye, le 10 février 2025
+        </figcaption>
+      </figure>
+      <p class="mb-4 border-l-4 border-green pl-4 transition-colors duration-300 hover:border-articleBg">
+      
+        La Russie joue donc une partition délicate en tentant de maintenir une influence en Syrie tout en consolidant ses positions africaines. D'un côté, elle cultive une diplomatie pragmatique avec HTC pour conserver un accès, même réduit, aux bases de Tartous et Khmeimim. De l'autre, elle intensifie sa présence en Libye et tisse un réseau renforcé de partenariats sécuritaires en Afrique. </p>
+       <p class="mb-4">Ainsi, malgré la perte de son allié syrien, Moscou n'entend pas renoncer à sa projection de puissance en Afrique. Le contournement des obstacles par des routes maritimes et terrestres alternatives, illustré par un <a href="https://www.rfi.fr/fr/afrique/20250129-de-conakry-%C3%A0-bamako-sur-la-piste-d-un-obscur-convoi-militaire-russe" class="text-primary hover:underline">convoi militaire entre Conakry et Bamako</a>, témoigne de cette volonté d'adaptation. </p>
+     <br>
+     <br>
+
+        <h3 class="text-3xl font-bold mb-4">
+            Russie et le rêve de Port-Soudan
+ 
+    
+           </h3>
+           <p class="mb-4">
+            </p>
+                       <p class="mb-4">
+                        Le 12 février 2025, le ministre des Affaires étrangères soudanais <a href="https://www.madamasr.com/en/2025/02/13/news/u/sudan-nashra-burhan-plans-new-technocratic-govt-military-pushes-toward-central-southern-khartoum-rsf-attacks-zamzam-camp-deploys-350-combat-vehicles-around-fasher/" class="text-primary hover:underline">a déclaré qu’il n’y avait plus d’obstacles à l’installation de la base navale russe</a>, une plateforme logistique conçue pour accueillir 300 personnes et quatre navires de guerre, dont des bâtiments à propulsion nucléaire. Ainsi, la Russie rejoindrait aux abords du détroit stratégique du Bab-el-Mandeb les États-Unis, la Chine et la France, qui disposent  de bases navales à Djibouti.
+                        </p>
+                        <p class="mb-4">
+                        Afin de comprendre les enjeux autour de l’établissement de cette base militaire, il est primordial de revenir sur son histoire et ses implications. 
+            
+            <p class="mb-4">L’ambition russe d’établir une base à Port-Soudan commence en 2019 sous le régime de l’ancien président soudanais Omar el-Béchir, renversé par un coup d’État militaire en avril 2019 par Abdel Fattah al-Burhan. Finalement, un accord sur l’établissement de la base russe est officiellement signé en novembre 2020, sous l’égide de Mohamed Hamdan "Hemeti" Dagalo, alors Vice-président du Conseil de souveraineté de transition de la république du Soudan.
+            </p>
+            <p class="mb-4">Situé sur la mer Rouge, ce site offrirait à la Russie un accès direct au canal de Suez et à l’océan Indien, renforçant ainsi son influence maritime dans la région. Cette ambition est également nourrie par l'Iran, qui, tout comme la Russie, a également été affecté stratégiquement par la chute du régime de Bachar al-Assad et soutient activement les forces d'Al-Burhan dans le conflit soudanais.</p>
+            
+            <p class="mb-4">Depuis le 15 avril 2023, le Soudan est en proie à une guerre civile opposant les Forces Armées Soudanaises (FAS), dirigées par Al-Burhan, et les Forces de Soutien Rapide (FSR), commandées par Hemeti. Ce conflit, prenant la forme d’une lutte de pouvoir entre deux factions rivales, a éclaté après l'échec des négociations sur l'intégration des FSR au sein de l'armée nationale, un point de friction majeur dans la transition politique du pays.</p>
+            <p class="mb-4">Khartoum, la capitale, est plongée dans des affrontements pour son contrôle, tandis que Port-Soudan est progressivement apparue comme une capitale de substitution où s’est installé le gouvernement de l'armée soudanaise. Malgré plusieurs tentatives de médiation internationale, aucun cessez-le-feu durable n’a été conclu.</p>
+            <p class="mb-4">Malgré l’accord acté en 2020, celui-ci a été suspendu en avril 2021 par le gouvernement de transition, du fait de l’absence d'organe législatif soudanais. Certains observateurs affirment que la pression exercée par les États-Unis, symbolisée par l'adhésion du Soudan aux Accords d’Abraham, a mené à la suspension de cet accord.</p>
+            
+            <p class="mb-4">En avril 2023, lorsque les combats éclatent, les FSR ont pris rapidement l’avantage sur l'armée, s’emparant d’une grande partie de Khartoum, et élargissant leur emprise vers l’ouest et le centre du Soudan. De ce fait, dans cette dynamique conflictuelle, il était légitime de se demander si Hemeti poursuivrait sa marche vers l’est pour attaquer Port-Soudan, bastion de l’armée ?</p>
+            <p class="mb-4">C'est pourquoi, dans un premier temps, la Russie avait donc misé sur Hemeti, suivant la ligne tracée par Wagner sous Prigojine. Pourtant, un changement de perception s’est visiblement opéré dans les cercles stratégiques russes. Hemeti, malgré sa puissance militaire et son influence régionale, voyait ses chances de s’emparer de Port-Soudan s’amenuiser, rendant cette option incertaine, voire compromise.</p>
+            <p class="mb-4">Effectivement, dès avril 2023, les Forces de Soutien Rapide (FSR) ont bénéficié de l'appui actif de la SMP Wagner, par le biais d'agents et de conseillers militaires. Ce soutien s’inscrivait dans une stratégie où Hemeti, était perçu comme un acteur clé pour sécuriser les intérêts stratégiques russes, notamment via la contrebande d'or, et pour faciliter l’implantation d’une base navale sur la mer Rouge.</p>
+            
+            </p>
+            <figure class="mb-4">
+                <img class="mx-auto w-full h-1/8" src=" sudan-one-year-final_4.png.webp" alt="Sudan areas of control, février 2025">
+                <figcaption class="text-xs text-gray-500 mt-1">
+                    Après un an de guerre, les deux principaux belligérants du Soudan ont divisé le pays en deux, la RSF contrôlant la majeure partie de l'ouest et la SAF la majeure partie de l'est. Source : Recherche de Crisis Group. Mapcreator, OSM, Copernicus. CRISIS GROUP
+                </figcaption>
+              </figure>
+            
+           
+               <p class="mb-4">Toutefois, malgré ce soutien, le Kremlin a dû réévaluer ses alliances face à l’évolution du rapport de force sur le terrain. À partir de printemps 2024, un revirement stratégique s’opère avec la visite du vice-ministre russe des Affaires étrangères, Mikhaïl Bogdanov, en avril 2024. Cet événement marque un réalignement officiel de Moscou en faveur d'Abdel Fattah al-Burhan, chef des FAS. Ceci s’explique notamment par l’engagement croissant des forces spéciales ukrainiennes aux côtés de l’armée soudanaise contre les FSR, et par la nécessité pour Moscou de conserver sa position stratégique au Soudan en cas de victoire de l’un des deux belligérants.</p>
+    <p class="mb-4">Face à cette réalité, Moscou aurait alors choisi d’ajuster son approche, non pas en abandonnant totalement les FSR, mais en rééquilibrant son soutien pour préserver ses intérêts quelle que soit l’issue du conflit. Maximiser ses gains, prolonger l’instabilité pour mieux en tirer parti, et s’ancrer durablement au Soudan, telles pourraient être les véritables motivations derrière ces allers-retours stratégiques, dont l’opportunisme reste le maître-mot.</p>
+
+    <p class="mb-4">Néanmoins, une autre hypothèse mérite d’être mentionnée, soulevant des questions substantielles. Wagner ou Africa Corps continue-t-il de soutenir les RSF ? Si tel est le cas, la transition vers une reconfiguration militaire sous contrôle du Kremlin est-elle réellement achevée ? Moscou et Africa Corps suivent-ils une ligne unifiée, conforme à l’objectif affiché d’un contrôle étatique renforcé du groupe paramilitaire ? Si la Russie a officiellement réorienté son soutien en faveur des FAS, rien ne prouve que la restructuration de Wagner soit pleinement effective.</p>
+    <p class="mb-4">Au Mali et en Centrafrique, la transition vers Africa Corps reste floue, Wagner y conservant une autonomie significative face au Kremlin. Le même schéma, pourrait-il se répéter au Soudan ? Où en est réellement la restructuration de Wagner sur place ? Africa Corps opère-t-il désormais aux côtés des FAS, ou bien l’organisation fondée par Prigojine reste-t-elle prédominante, notamment au Darfour?</p>
+    <p class="mb-4">La réponse à ces questions sera déterminante. Si Africa Corps a pleinement pris les rênes des opérations, alors l’hypothèse d’un double jeu du Kremlin prend tout son sens. En revanche, si Wagner, sous sa forme originelle, continue de soutenir les RSF, cela conforterait l’idée d’un rééquilibrage stratégique.</p>
+    <p class="mb-4">Pour l’heure, les incertitudes demeurent, et la réalité du terrain pourrait révéler des divergences plus profondes que ne le laisse entendre la position officielle russe.</p>
+
+    <p class="mb-4">Depuis sa prise de pouvoir, Abdel-Fattah Al-Burhan, chef des FAS et dirigeant de facto du pays, freinait l’établissement d’une base navale russe à Port Soudan par crainte de sanctions qui auraient aggravé son isolement diplomatique et économique. Le changement de paradigme de l’armée soudanaise sur ce dossier coïncide avec la reprise de territoires clé à Khartoum par les forces de l’armée soudanaise. Al-Burhan a récemment affiché sa confiance en l’avenir et son ambition de mettre en place un nouveau gouvernement. Port-Soudan devient ainsi un enjeu central du redéploiement militaire russe en Afrique, dans un contexte où Moscou cherche à sécuriser ses positions face à la recomposition des équilibres régionaux.</p>
+    <p class="mb-4 border-l-4 border-green pl-4 transition-colors duration-300 hover:border-articleBg">Le choix des FAS d’accepter l’installation d’une base navale russe à Port Soudan soulève une interrogation essentielle. Dans un contexte où une victoire militaire – caractérisée par le contrôle de Khartoum – semble se dessiner, pourquoi Al-Burhan semble-t-il désormais ignorer les sanctions occidentales, la dernière ayant été infligée le 16 janvier 2025 ? Peut-on interpréter ce désintérêt comme un optimisme stratégique des FAS, nourri par la politique de désengagement des États-Unis sous l’administration Trump, ou comme une volonté de précipiter les accords de paix, voire une détermination à ratifier à tout prix les accords d’Abraham?</p>
+
+    <p class="mb-4">La réaction d’Al Burhan aux dernières sanctions américaines nous donne des éléments de réflexion, il déclare qu’il n’a “même pas pris la peine de lire la décision américaine.”</p>
+    <p class="mb-4">Cela nous invite à nous demander si les sanctions économiques internationales sont réellement efficaces afin de dissuader des acteurs dont les priorités belliqueuses outrepassent le droit international? La question reste ouverte.</p>
+</p>
+      <figure class="mb-4">
+        <img class="mx-auto w-full h-1/8" src="https://understandingwar.org/sites/default/files/2025-02-20%20Sudan%20CoT.png" alt="Sudan areas of control, février 2025">
+        <figcaption class="text-xs text-gray-500 mt-1">
+          Sudan areas of control, février 2025
+        </figcaption>
+      </figure>
+      <br>
+      <br>
+      
+      <h3 class="text-3xl font-bold mb-4">
+Conclusion
+
+       </h3>
+       <p class="mb-4">
+        La chute du régime d’Assad et la perte des bases syriennes ont indéniablement fragilisé les capacités de projection de Moscou. Pourtant, loin de se résigner, la Russie a transformé cette épreuve en opportunité, réorientant son influence vers le continent africain. Ce redéploiement s’inscrit-il réellement dans une vision de long terme ou n’est-il que l’expression d’un opportunisme dicté par les circonstances ? À l’heure où les négociations sur le conflit russo-ukrainien captent l’attention du monde, cette expansion en Afrique est-elle le fruit d’un plan méthodiquement conçu ou d’une réaction improvisée face aux revers subis au Levant ? L’Afrique est-elle une priorité stratégique pour Moscou ou un simple théâtre d’ombres, où s’agitent des ambitions sans horizon clair ? Le doute est permis. 
+
+
+
+
+
+        </p>
+      <p class="text-xs text-gray-500 mt-8">
+        Sources : Divers articles d'analyse, AFP, Reuters, Bloomberg, BBC, Radio France, Understanding War
+      </p>
+    </div>
+  </section>
+  <footer class="bg-articleBg text-center py-8 border-t-4 border-dark bg-cover">
+    <div class="social-media">
+        <p class="font-bold text-white">© Muinda</p>
+    </div>
+   
+</footer>
+</body>
+</html>
